@@ -40,7 +40,7 @@ abstract class Animals
 
     abstract String getName();
 
-    // abstract int getYear();
+    abstract int getYear();
 
     @Override
     public String toString()

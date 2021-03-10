@@ -77,11 +77,16 @@ public class Main
         myList.forEach((v) -> System.out.println(v.getName() + " move: " + v.move()));
 
         System.out.println("\nList only those animals the breath with lungs");
-        // myList.forEach((v) -> v.breath().equalsIgnoreCase("lungs"));
         filterAnimals(myList, a -> (a.breath().equalsIgnoreCase("lungs")) && (a instanceof Animals),
                 true);
         System.out
                 .println("\nList only those animals that breath with lungs and were named in 1758");
+        filterAnimals(myList, a -> (a.breath().equalsIgnoreCase("lungs")) && (a.getYear() == 1758));
+        System.out.println("List only those animals that lay eggs and breath with lungs");
+        filterAnimals(myList,
+                a -> (a.breath().equalsIgnoreCase("lungs")) && (a.breath() == "eggs"));
+        System.out.println("List alphabetically only those animals that were named in 1758");
+        filterAnimals(myList, a -> (a.getYear() == 1758));
 
     }
 }

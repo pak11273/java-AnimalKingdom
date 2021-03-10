@@ -39,10 +39,10 @@ public class Fish extends Animals
         return this.name;
     }
 
-    // @Override
-    // public int getYear()
-    // {
-    // return year;
-    // }
+    @Override
+    public int getYear()
+    {
+        return year;
+    }
 
 }
