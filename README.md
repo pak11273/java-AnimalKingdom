@@ -50,7 +50,7 @@ Create a collection for the animals using the following data
   | Parrot  | 1824       |
   | Swan    | 1758       |
 
-- [ ] **Fish:**
+- [x] **Fish:**
 
   | Name    | Year Named |
   | ------- | ---------- |
