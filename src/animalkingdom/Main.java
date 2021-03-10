@@ -81,12 +81,13 @@ public class Main
                 true);
         System.out
                 .println("\nList only those animals that breath with lungs and were named in 1758");
-        filterAnimals(myList, a -> (a.breath().equalsIgnoreCase("lungs")) && (a.getYear() == 1758));
+        filterAnimals(myList, a -> (a.breath().equalsIgnoreCase("lungs")) && (a.getYear() == 1758),
+                true);
         System.out.println("List only those animals that lay eggs and breath with lungs");
-        filterAnimals(myList,
-                a -> (a.breath().equalsIgnoreCase("lungs")) && (a.breath() == "eggs"));
+        filterAnimals(myList, a -> (a.breath().equalsIgnoreCase("lungs")) && (a.breath() == "eggs"),
+                true);
         System.out.println("List alphabetically only those animals that were named in 1758");
-        filterAnimals(myList, a -> (a.getYear() == 1758));
+        filterAnimals(myList, a -> (a.getYear() == 1758), true);
 
     }
 }
